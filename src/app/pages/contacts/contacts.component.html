@@ -1,0 +1,16 @@
+<div id="container">
+
+    <div id="contactos-container">
+        <app-tarjeta-contacto
+        *ngFor="let contacto of contactos"
+        [contacto]="contacto"
+        [routerLink]="[contacto.id]" 
+        ></app-tarjeta-contacto>
+</div>
+<button class="fab" (click)="dialogNuevoContacto.showModal()">+</button>
+
+<dialog method="dialog" #dialogNuevoContacto>
+    <app-nuevo-contacto (cerrar)="dialogNuevoContacto.close()"></app-nuevo-contacto>
+</dialog>
+
+</div>

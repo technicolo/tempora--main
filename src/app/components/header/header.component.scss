@@ -1,0 +1,19 @@
+@use "./../../../assets/styles/variables.scss";
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    #logo{
+        height: 80px;
+    }
+}
+div {
+    
+    background-image: url("./../../../assets/img/fondo/fondo-header-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Usar cover para cubrir todo el fondo */
+   
+}

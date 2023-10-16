@@ -1,0 +1,33 @@
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+    <h2>{{contacto.id ? "Editar contacto" : "Nuevo contacto"}}</h2>
+    <div>
+        <label for="">Nombre</label>
+        <input type="text" [(ngModel)]="contacto.nombre" name="nombre" [(ngModel)]="contacto.nombre" name="nombre">
+    </div>
+    <div>
+        <label for="">Apellido</label>
+        <input type="text" [(ngModel)]="contacto.apellido" name="apellido">
+    </div>
+    <div>
+        <label for="">Direccion</label>
+        <input type="text" [(ngModel)]="contacto.direccion" name="direccion">
+    </div>
+    <div>
+        <label for="">Numero telefono</label>
+        <input type="text" [(ngModel)]="contacto.telefono" name="telefono">
+    </div>
+    <div>
+        <label for="">Empresa</label>
+        <input type="text" [(ngModel)]="contacto.empresa" name="empresa">
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input type="email" name="email" [(ngModel)]="contacto.email">
+    </div>
+    <div>
+        <label for="">Foto</label>
+        <input type="text" [(ngModel)]="contacto.img" name="img" id=""> 
+    </div>
+    <button type="submit">{{contacto.id ? "Editar" : "Crear"}}</button>
+    <button type="button" (click)="cerrar.emit()">Cancelar</button>
+</form>

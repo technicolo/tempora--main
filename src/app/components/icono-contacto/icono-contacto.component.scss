@@ -1,0 +1,28 @@
+@use "./../../../assets/styles/variables.scss";
+
+#container{
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#circulo-color{
+  background-color: variables.$color-principal;
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 100%;
+  span{
+    text-align: center;
+  }
+}

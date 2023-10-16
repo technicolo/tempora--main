@@ -1,0 +1,21 @@
+<div id="container">
+    <div class="form-container">
+        <h1>Iniciar sesión</h1>
+        <p>
+            Ingresá tus credenciales para acceder al servicio de contactos.
+        </p>
+        <form>
+            <label for="user" class="sr-only">Nombre de usuario</label>
+            <input type="text" name="user" id="user" placeholder="Usuario" autocomplete="username" minlength="4">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" minlength="4">
+            <label for="email" class="sr-only">Contraseña</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" autocomplete="current-password" minlength="8">
+            <label for="email" class="sr-only">Repetir contraseña</label>
+            <input type="password" name="repeat-password" id="repeat-password" placeholder="Repetir contraseña" autocomplete="repeat-password" minlength="8">
+            <button type="submit" (click)="register()">Iniciar sesión</button>
+            <p class="escondido error">Error al iniciar sesión</p>
+        </form>
+        <p>¿Ya tenés una cuenta? - <a [routerLink]="['/login']" routerLinkActive="router-link-active" >Iniciar sesión</a></p>
+    </div>
+</div>

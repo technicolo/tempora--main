@@ -1,0 +1,15 @@
+@use "./../../../assets/styles/variables.scss";
+
+.tarjeta-contacto{
+    padding: 10px 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 4fr 3fr 3fr;
+    cursor: pointer;
+    app-icono-contacto{
+        width: 50%;
+        margin: auto;
+    }
+    &:hover{
+        background-color: variables.$color-acento;
+    }
+}

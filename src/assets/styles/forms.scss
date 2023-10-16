@@ -1,0 +1,88 @@
+@use "./variables.scss";
+
+#container{
+  padding-top: 0.5%;
+  padding-bottom: 25%;
+  background-image: url("./../img/fondo/G3G58_220916_cover_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Usar cover para cubrir todo el fondo */
+  height: 100vh; /* Usar vh (viewport height) en lugar de vw */
+}
+
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ajusta el espacio entre el contenido y el pie de página */
+   /* Ajusta la altura para ocupar toda la pantalla */
+  }
+
+
+input, button, label{
+  font-size: 28px;
+}
+
+h1{
+  font-size: 32px;
+  margin: 0;
+}
+
+.form-container{
+  max-width: 400px;
+  border-radius: 8px;
+  background-color: variables.$color-fondo;
+  padding: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+input, button{
+  border-radius: 4px;
+  padding: 15px 30px;
+  border: none;
+}
+
+input{
+  background-color: rgba(0, 0, 0, 0.05)
+}
+
+button{
+  background-color: variables.$color-principal;
+  color: variables.$color-texto-invertido;
+  cursor: pointer;
+  &[disabled]{
+    background-color: gray;
+    cursor:not-allowed;
+  }
+}
+
+a{
+  color:variables.$color-principal;
+}
+
+.error{
+  color: variables.$color-error;
+}
+
+.escondido{
+  display: none;
+}
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  }
+
+.form-container, form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form+p, form p{
+  text-align: center;
+}
