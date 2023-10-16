@@ -12,8 +12,14 @@ header{
 }
 div {
     
-    background-image: url("./../../../assets/img/fondo/fondo-header-footer.jpg");
+    background-image: url("./../../../assets/img/fondo/fondo-header-footer-editado3.jpg");
     background-repeat: no-repeat;
     background-size: cover; /* Usar cover para cubrir todo el fondo */
    
+}
+span{
+    color: variables.$color-variante ;
+}
+img{
+    width: 100px;
 }
