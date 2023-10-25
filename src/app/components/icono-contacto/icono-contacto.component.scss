@@ -1,27 +1,30 @@
 @use "./../../../assets/styles/variables.scss";
 
 #container{
-    width: 100%;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%; /* Ancho ajustado para mostrar dos usuarios en una fila */
+  border-radius: 10px; /* Personaliza el redondeo de las esquinas si es necesario */
+  margin-right: 1%; /* Espacio entre las tarjetas */
+  display: inline-block; /* Muestra las tarjetas una al lado de la otra */
+  text-align: center; /* Centra el contenido de la tarjeta */
+  overflow: hidden;
+  cursor: pointer; /* Agrega el cursor pointer */
+  &:hover {
+      background-color: variables.$color-acento; /* Cambia el fondo en el hover */
+  }
 }
 
 img{
-    object-fit: cover;
-    width: 100%;
+  width: 50%; /* Ajusta el ancho de la imagen de usuario según tus necesidades */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 #circulo-color{
   background-color: variables.$color-principal;
   aspect-ratio: 1;
   display: grid;
-  grid-template-columns: 1fr;
+  margin: 0 auto;
   align-items: center;
-  width: 100%;
+  width: 50%;
   span{
     text-align: center;
   }
