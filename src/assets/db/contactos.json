@@ -31,6 +31,7 @@
     },
     {
       "id": 4,
+
       "nombre": "Car",
       "apellido": "Pincho",
       "direccion": "Rosas 456",
@@ -38,5 +39,14 @@
       "telefono": "22345678",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMGTIO711s6OzSCAZt05tDBrcOz1mFVHOXw&usqp=CAU",
       "empresa": "puntoJson"
+    },
+      {
+      "nombre": "perro",
+      "apellido": "salchicha",
+      "direccion": "sombrero de marinero 123",
+      "email": "gorro@collar.com",
+      "telefono": "1234567822",
+      "img": "https://i.ytimg.com/vi/8C4JyURb_6E/hq720.jpg?sqp=-oaymwEYCJUDENAFSFryq4qpAwoIARUAAIhC0AEB&rs=AOn4CLDkjV0nIAzNf2oh8cS7WYKMYNLc_w",
+      "empresa": "a la orilla del mar"
     }
   ]
