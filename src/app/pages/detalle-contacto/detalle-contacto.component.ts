@@ -14,15 +14,16 @@ export class DetalleContactoComponent implements OnInit{
   activatedRoute = inject(ActivatedRoute);
   router = inject(Router);
 
-  contacto:Contacto = { 
+  contacto:Contacto = {
     id: 0,
-    nombre: '',
-    apellido: '',
-    direccion: '',
+    name: '',
+    lastName: '',
+    address: '',
     email: '',
-    img: '',
-    telefono: '',
-    empresa: ''
+    image: '',
+    number: '',
+    company: '',
+    userId: 0
   }
   
   ngOnInit(): void {
@@ -34,7 +35,7 @@ export class DetalleContactoComponent implements OnInit{
   }
     borrarContacto(){
       Swal.fire({
-        title: '¿Querés eliminar el contacto '+this.contacto.nombre+ ' '+ this.contacto.apellido+'?',
+        title: '¿Querés eliminar el contacto '+this.contacto.name+ ' '+ this.contacto.lastName+'?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -71,3 +72,4 @@ export class DetalleContactoComponent implements OnInit{
   
 
 }
+

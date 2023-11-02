@@ -2,23 +2,23 @@
     <h2>{{contacto.id ? "Editar contacto" : "Nuevo contacto"}}</h2>
     <div>
         <label for="">Nombre</label>
-        <input type="text" [(ngModel)]="contacto.nombre" name="nombre" [(ngModel)]="contacto.nombre" name="nombre">
+        <input type="text" [(ngModel)]="contacto.name" name="nombre" [(ngModel)]="contacto.name" name="nombre">
     </div>
     <div>
         <label for="">Apellido</label>
-        <input type="text" [(ngModel)]="contacto.apellido" name="apellido">
+        <input type="text" [(ngModel)]="contacto.lastName" name="apellido">
     </div>
     <div>
         <label for="">Direccion</label>
-        <input type="text" [(ngModel)]="contacto.direccion" name="direccion">
+        <input type="text" [(ngModel)]="contacto.address" name="direccion">
     </div>
     <div>
         <label for="">Numero telefono</label>
-        <input type="text" [(ngModel)]="contacto.telefono" name="telefono">
+        <input type="text" [(ngModel)]="contacto.number" name="telefono">
     </div>
     <div>
         <label for="">Empresa</label>
-        <input type="text" [(ngModel)]="contacto.empresa" name="empresa">
+        <input type="text" [(ngModel)]="contacto.company" name="empresa">
     </div>
     <div>
         <label for="">Email</label>
@@ -26,7 +26,7 @@
     </div>
     <div>
         <label for="">Foto</label>
-        <input type="text" [(ngModel)]="contacto.img" name="img" id=""> 
+        <input type="text" [(ngModel)]="contacto.image" name="img" id=""> 
     </div>
     <button type="submit">{{contacto.id ? "Editar" : "Crear"}}</button>
     <button type="button" (click)="cerrar.emit()">Cancelar</button>

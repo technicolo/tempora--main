@@ -4,17 +4,21 @@
         <p>
             Ingresá tus credenciales para acceder al servicio de contactos.
         </p>
-        <form>
+        <form #registerForm="ngForm" (ngSubmit)="register()">
             <label for="user" class="sr-only">Nombre de usuario</label>
-            <input type="text" name="user" id="user" placeholder="Usuario" autocomplete="username" minlength="4">
-            <label for="email" class="sr-only">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" minlength="4">
-            <label for="email" class="sr-only">Contraseña</label>
-            <input type="password" name="password" id="password" placeholder="Contraseña" autocomplete="current-password" minlength="8">
-            <label for="email" class="sr-only">Repetir contraseña</label>
-            <input type="password" name="repeat-password" id="repeat-password" placeholder="Repetir contraseña" autocomplete="repeat-password" minlength="8">
-            <button type="submit" (click)="register()">Iniciar sesión</button>
-            <p class="escondido error">Error al iniciar sesión</p>
+            <input type="text" name="user" id="user" placeholder="Usuario" autocomplete="username" minlength="4" required="true" [(ngModel)]="registerData.nombreDeUsuario" #user="ngModel">
+            <p class="error" *ngIf="user.invalid && (user.touched || user.dirty)">Ingrese un nombre de usuario válido</p>
+            <label for="nombre" class="sr-only">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" autocomplete="nombre" minlength="3" [(ngModel)]="registerData.nombre" #nombre="ngModel">
+            <p class="error" *ngIf="nombre.invalid && (nombre.touched || nombre.dirty)">Ingrese un nombre válido</p>
+            <label for="apellido" class="sr-only">apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="apellido" autocomplete="apellido" minlength="3" [(ngModel)]="registerData.apellido" #apellido="ngModel">
+            <p class="error" *ngIf="apellido.invalid && (apellido.touched || apellido.dirty)">Ingrese un apellido válido</p>
+            <label for="password" class="sr-only">Contraseña</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" autocomplete="current-password" minlength="8" [(ngModel)]="registerData.contrasenia" #password="ngModel">
+            <p class="error" *ngIf="password.invalid && (password.touched || password.dirty)">Ingrese una contraseña válida</p>
+            <button type="submit" [disabled]="registerForm.invalid">Registrarse</button>
+            <p class="escondido error">Iniciar sesión</p>
         </form>
         <p>¿Ya tenés una cuenta? - <a [routerLink]="['/login']" routerLinkActive="router-link-active" >Iniciar sesión</a></p>
     </div>

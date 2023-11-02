@@ -6,12 +6,12 @@ import { usuarioSinLoguear } from './guards/usuario-sin-loguear';
 const routes: Routes = [
   {
     path:"login",
-   // canActivate: [usuarioSinLoguear],
+    //canActivate: [usuarioSinLoguear],
     loadChildren: ()=> import('./pages/login/login.module').then(m => m.LoginModule)
   },
   {
     path:"register",
-  //  canActivate: [usuarioSinLoguear],
+    //canActivate: [usuarioSinLoguear],
     loadChildren: ()=> import('./pages/register/register.module').then(m => m.RegisterModule)
   },
   {
@@ -21,18 +21,18 @@ const routes: Routes = [
   },
   {
     path:"contacts/:id",
-   // canActivate: [usuarioLogueadoGuard],
+    //canActivate: [usuarioLogueadoGuard],
     loadChildren: ()=> import('./pages/detalle-contacto/detalle-contacto.module').then(m => m.DetalleContactoModule)
   },
- // {
- //   path: "",
- //   redirectTo: 'contacts',
- //   pathMatch: "full"
- // },
-  {
-    path:"**",
-    loadChildren: ()=> import('./pages/error/error.module').then(m => m.ErrorModule)
-  },
+  //{
+  //  path: "",
+  //  redirectTo: 'contacts',
+  //  pathMatch: "full"
+  //},
+  //{
+  //  path:"**",
+  //  loadChildren: ()=> import('./pages/error/error.module').then(m => m.ErrorModule)
+  //},
 ];
 
 @NgModule({

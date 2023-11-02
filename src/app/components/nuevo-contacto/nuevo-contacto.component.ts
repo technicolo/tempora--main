@@ -17,13 +17,14 @@ export class NuevoContactoComponent {
   @Output() cerrar = new EventEmitter();
   @Input() contacto:Contacto = {
     id: 0,
-    nombre: '',
-    apellido: '',
-    direccion: '',
+    name: '',
+    lastName: '',
+    address: '',
     email: '',
-    img: '',
-    telefono: '',
-    empresa: ''
+    image: '',
+    number: '',
+    company: '',
+    userId: 0
   }
 
   async onSubmit(){
@@ -53,3 +54,4 @@ export class NuevoContactoComponent {
   }
 
 }
+

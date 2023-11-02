@@ -1,22 +1,24 @@
 <div class="container-chico">
   <div id="top">
     <app-icono-contacto [contacto]="contacto"></app-icono-contacto>
-    <h1>{{contacto.nombre}} {{contacto.apellido}}</h1>
+    <h1>{{contacto.name}} {{contacto.lastName}}</h1>
   </div>
   <h2>Datos de contacto</h2>
   <ul>
     <li>
       <img src="./../../../assets/img/icons/icons8-teléfono-100.png" alt="Teléfono">
-      <p>{{contacto.telefono}}</p>
+      <p>{{contacto.number}}</p>
     </li>
     <li>
       <img src="./../../../assets/img/icons/icons8-dirección-100.png" alt="Dirección">
-      <p>{{contacto.direccion}}</p>
+      <p>{{contacto.address}}</p>
     </li>
     </ul>
-    <button (click)="borrarContacto()">Borrar</button>
-    <button (click)="modalEditar.showModal()">Editar</button>
+    <div id="botones-container">
+      <button (click)="borrarContacto()">Borrar</button>
+      <button (click)="modalEditar.showModal()">Editar</button>
+    </div>
     <dialog method="modal" #modalEditar>
       <app-nuevo-contacto (cerrar)="modalEditar.close()" [contacto]="contacto"></app-nuevo-contacto>
-    </dialog> 
+    </dialog>
 </div>
