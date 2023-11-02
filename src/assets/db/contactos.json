@@ -31,6 +31,16 @@
     },
     {
       "id": 4,
+
+      "nombre": "Car",
+      "apellido": "Pincho",
+      "direccion": "Rosas 456",
+      "email": "capy@test.com",
+      "telefono": "22345678",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMGTIO711s6OzSCAZt05tDBrcOz1mFVHOXw&usqp=CAU",
+      "empresa": "puntoJson"
+    },
+      {
       "nombre": "perro",
       "apellido": "salchicha",
       "direccion": "sombrero de marinero 123",

@@ -1,5 +1,18 @@
 @use "./../../../assets/styles/variables.scss";
 
+
+.tarjeta-contacto{
+    padding: 10px 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 4fr 3fr 3fr;
+    cursor: pointer;
+    app-icono-contacto{
+        width: 50%;
+        margin: auto;
+    }
+    &:hover{
+        background-color: variables.$color-principal
+    }}
 .tarjeta-contacto {
     width: 48%; /* Ancho ajustado para mostrar dos usuarios en una fila */
     height: 200px; /* Establece una altura fija para las tarjetas */
@@ -11,6 +24,7 @@
     cursor: pointer; /* Agrega el cursor pointer */
     &:hover {
         background-color: variables.$color-acento; /* Cambia el fondo en el hover */
+
     }
 }
 

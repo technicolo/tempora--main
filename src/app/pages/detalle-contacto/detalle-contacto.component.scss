@@ -1,3 +1,5 @@
+@use "./../../../assets/styles/variables.scss";
+
 #top{
   display: flex;
   align-items: center;
@@ -21,7 +23,9 @@
     margin-bottom: unset;
   }
 }
-
+button{
+  background-color: variables.$color-acento;
+}
 ul{
   display: flex;
   flex-direction: column;
