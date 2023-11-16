@@ -1,52 +1,52 @@
 [
     {
       "id": 1,
-      "nombre": "Gonzalo",
-      "apellido": "Bechara",
-      "direccion": "Juan Manuel de Rosas 456",
+      "name": "Gonzalo",
+      "lastName": "Bechara",
+      "address": "Juan Manuel de Rosas 456",
       "email": "test@test.com",
-      "telefono": "12345678",
-      "img": "./../../../assets/img/logo.png",
-      "empresa": "puntoJson"
+      "number": "12345678",
+      "image": "./../../../assets/img/logo.png",
+      "company": "puntoJson"
     },
     {
       "id": 2,
-      "nombre": "Lionel",
-      "apellido": "Messi",
-      "direccion": "Pellegrini 1150",
+      "name": "Lionel",
+      "lastName": "Messi",
+      "address": "Pellegrini 1150",
       "email": "email@email.com",
-      "telefono": "123456",
-      "img": "https://img.uefa.com/imgml/TP/players/2020/2022/324x324/95803.jpg",
-      "empresa": "-"
+      "number": "123456",
+      "image": "https://img.uefa.com/imgml/TP/players/2020/2022/324x324/95803.jpg",
+      "company": "-"
     },
     {
       "id": 3,
-      "nombre": "Sin",
-      "apellido": "Foto",
-      "direccion": "Juan Manuel de Rosas 456",
+      "name": "Sin",
+      "lastName": "Foto",
+      "address": "Juan Manuel de Rosas 456",
       "email": "test@test.com",
-      "telefono": "12345678",
-      "img": "",
-      "empresa": "puntoJson"
+      "number": "12345678",
+      "image": "",
+      "company": "puntoJson"
     },
     {
       "id": 4,
 
-      "nombre": "Car",
-      "apellido": "Pincho",
-      "direccion": "Rosas 456",
+      "name": "Car",
+      "lastName": "Pincho",
+      "address": "Rosas 456",
       "email": "capy@test.com",
-      "telefono": "22345678",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMGTIO711s6OzSCAZt05tDBrcOz1mFVHOXw&usqp=CAU",
-      "empresa": "puntoJson"
+      "number": "22345678",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMGTIO711s6OzSCAZt05tDBrcOz1mFVHOXw&usqp=CAU",
+      "company": "puntoJson"
     },
       {
-      "nombre": "perro",
-      "apellido": "salchicha",
-      "direccion": "sombrero de marinero 123",
-      "email": "gorro@collar.com",
-      "telefono": "1234567822",
-      "img": "https://i.ytimg.com/vi/8C4JyURb_6E/hq720.jpg?sqp=-oaymwEYCJUDENAFSFryq4qpAwoIARUAAIhC0AEB&rs=AOn4CLDkjV0nIAzNf2oh8cS7WYKMYNLc_w",
-      "empresa": "a la orilla del mar"
+      "name": "perro",
+      "lastName": "salchicha",
+      "address": "sombrero de marinero 123",
+      "email": "gordo@bachicha.com",
+      "number": "86627657486 ",
+      "image": "https://i.ytimg.com/vi/8C4JyURb_6E/hq720.jpg?sqp=-oaymwEYCJUDENAFSFryq4qpAwoIARUAAIhC0AEB&rs=AOn4CLDkjV0nIAzNf2oh8cS7WYKMYNLc_w",
+      "company": "a la orilla del mar"
     }
   ]

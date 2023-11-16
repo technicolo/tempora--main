@@ -1,34 +1,16 @@
 @use "./../../../assets/styles/variables.scss";
 
-
 .tarjeta-contacto{
-    padding: 10px 5px;
+    padding: 5px 5px;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 4fr 3fr 3fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
     cursor: pointer;
+    align-items: center;
     app-icono-contacto{
         width: 50%;
         margin: auto;
     }
     &:hover{
-        background-color: variables.$color-principal
-    }}
-.tarjeta-contacto {
-    width: 48%; /* Ancho ajustado para mostrar dos usuarios en una fila */
-    height: 200px; /* Establece una altura fija para las tarjetas */
-    border-radius: 10px; /* Personaliza el redondeo de las esquinas si es necesario */
-    margin-right: 2%; /* Espacio entre las tarjetas */
-    display: inline-block; /* Muestra las tarjetas una al lado de la otra */
-    text-align: center; /* Centra el contenido de la tarjeta */
-    overflow: hidden; /* Oculta el contenido adicional que se desborde */
-    cursor: pointer; /* Agrega el cursor pointer */
-    &:hover {
-        background-color: variables.$color-acento; /* Cambia el fondo en el hover */
-
+        background-color: variables.$color-principal;
     }
-}
-
-.app-icono-contacto {
-    width: 50%; /* Ajusta el ancho del icono según tus necesidades */
-    margin: 50%; /* Centra el icono horizontalmente */
 }
