@@ -37,12 +37,14 @@ export class AuthService {
   async register(registerData: RegisterData){
     const res = await fetch(API+"User", {
       method: "POST",
+      headers: {
+        "Content-Type":"application/json"
+      },
       body: JSON.stringify(registerData)
     });
     console.log("REGISTRANDO",res)
     return res
   }
-
   logOut(){
     this.token.set(null);
     localStorage.removeItem("token");

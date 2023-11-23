@@ -1,22 +1,49 @@
 @use "./../../../assets/styles/variables.scss";
 
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // flex-wrap: wrap;
     padding: 10px 20px;
-
-    #logo{
-        height: 80px;
-    }
-}
-div {
-    
     background-image: url("./../../../assets/img/fondo/fondo-header-footer-editado3.jpg");
     background-repeat: no-repeat;
     background-size: cover; /* Usar cover para cubrir todo el fondo */
    
-}
+    #logo {
+      height: 80px;
+      cursor: pointer;
+    }
+    nav {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      > * {
+        font-size: large;
+        color: variables.$color-texto;
+        line-height: 20px;
+        background-color: unset;
+        border: unset;
+        text-decoration: unset;
+        padding: 16px 12px;
+        cursor: pointer;
+
+      }
+    }
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  @media (width < variables.$bp-mobile){
+    header #logo{
+      height: 40px;
+    }
+  }
+
 span{
     color: variables.$color-principal;
 }

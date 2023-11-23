@@ -1,7 +1,7 @@
-<div >
-    
-    <header>
-        <img id="logo" src="https://png.pngtree.com/png-vector/20191022/ourlarge/pngtree-simple-line-icon-on-black-square-background-vector-for-your-desi-png-image_1843335.jpg" alt="logo">
-    <span>star friendship</span>
+<header>
+    <img id="logo" src="https://png.pngtree.com/png-vector/20191022/ourlarge/pngtree-simple-line-icon-on-black-square-background-vector-for-your-desi-png-image_1843335.jpg" alt="logo" [routerLink]="['/']" >
+    <nav>
+      <a [routerLink]="['/contacts']" routerLinkActive="active" >Contactos</a>
+      <button (click)="auth.logOut()">Logout</button>
+    </nav>
 </header>
-</div>

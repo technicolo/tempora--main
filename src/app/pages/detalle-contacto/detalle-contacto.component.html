@@ -19,6 +19,10 @@
       <button (click)="modalEditar.showModal()">Editar</button>
     </div>
     <dialog method="modal" #modalEditar>
-      <app-nuevo-contacto (cerrar)="modalEditar.close()" [contacto]="contacto"></app-nuevo-contacto>
+
+      <app-nuevo-contacto (cerrar)="modalEditar.close()" 
+      [contacto]="contacto">
+    </app-nuevo-contacto>
+
     </dialog>
 </div>

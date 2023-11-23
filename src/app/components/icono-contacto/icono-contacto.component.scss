@@ -1,9 +1,8 @@
 @use "./../../../assets/styles/variables.scss";
 
 #container{
-  width: 200px;
-  height: 100px;
-  border-radius: 100%;
+  width: 100%;
+  border-radius: 50%;
   aspect-ratio: 1;
   overflow: hidden;
   display: flex;
@@ -13,8 +12,7 @@
 
 img{
   object-fit: cover;
-  width: 40%;
-  height: 50%;
+  width: 100%;
 }
 
 #circulo-color{
@@ -23,11 +21,8 @@ aspect-ratio: 1;
 display: grid;
 grid-template-columns: 1fr;
 align-items: center;
-text-align: center;
-width: 50%;
-height: 50%;
+width: 100%;
 span{
   text-align: center;
-  align-items: center;
 }
 }
