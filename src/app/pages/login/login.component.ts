@@ -14,14 +14,16 @@ export class LoginComponent {
 
 
   loginData: LoginData= {
-    nombreDeUsuario:"",
-    contrasenia: ""
+    userName:"",
+    password: ""
   }
 
   login(){
     this.authService.login(this.loginData).then(res => {
       if(res) this.router.navigate(["/contacts"]);
-      else console.log('Error autenticando');
+      else {
+        console.log('Error autenticando');
+      }
     });
     //
   }

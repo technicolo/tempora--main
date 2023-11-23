@@ -1,12 +1,12 @@
 <form #form="ngForm" (ngSubmit)="onSubmit()">
     <h2>{{contacto.id ? "Editar contacto" : "Nuevo contacto"}}</h2>
     <div>
-        <label for="">Nombre</label>
-        <input type="text" [(ngModel)]="contacto.name" name="nombre" [(ngModel)]="contacto.name" name="nombre">
+        <label for="">Name</label>
+        <input type="text" [(ngModel)]="contacto.name" name="Name" [(ngModel)]="contacto.name" name="Name">
     </div>
     <div>
-        <label for="">Apellido</label>
-        <input type="text" [(ngModel)]="contacto.lastName" name="apellido">
+        <label for="">LastName</label>
+        <input type="text" [(ngModel)]="contacto.lastName" name="LastName">
     </div>
     <div>
         <label for="">Direccion</label>
